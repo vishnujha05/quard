@@ -8,9 +8,11 @@ const bodyparse=require('body-parser')
 const app=express()
 
 const port=process.env.PORT || 4000
+
 app.set('view engine','ejs')
-//console.log(__dirname+'/css')
+
 const css =path.join(__dirname, '/css')
+
 app.use(express.static(css))
 app.use(bodyparse.json())
 app.use(bodyparse.urlencoded({extended:true}))
