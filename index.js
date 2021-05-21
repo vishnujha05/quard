@@ -3,15 +3,17 @@ const axios=require('axios')
 const ejs=require('ejs')
 require('dotenv').config()
 const path = require('path')
-const {parser,stringify} = require('flatted')
-
+const bodyparse=require('body-parser')
 
 const app=express()
+
 const port=process.env.Port || 4000
 app.set('view engine','ejs')
 //console.log(__dirname+'/css')
 const css =path.join(__dirname, '/css')
 app.use(express.static(css))
+app.use(bodyparse.json())
+app.use(bodyparse.urlencoded({extended:true}))
 
 axios.get('https://api.wazirx.com/api/v2/tickers')
 .then(data=>{
