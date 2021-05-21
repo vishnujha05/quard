@@ -1,0 +1,50 @@
+body{
+    padding: 0%;
+    margin: 0%;
+    background-color: rgb(29, 29, 46);
+}
+.hodlinfo{
+    color: rgb(5, 151, 156);
+    font-size: 30px;
+}
+.com{
+    color: snow;
+}
+.powered{
+    padding: 0;
+    font-size: 16px;
+    color: rgb(5, 151, 156);
+}
+.btnt{
+    background-color: rgb(5, 189, 189);
+    color: white;
+    border-radius: 10px;
+}
+.switch{
+    color: cyan !important;
+    background-color: cyan;
+    height: 20px;
+    width: 50px;
+    margin: 10px;
+    
+}
+.circle{
+    height: 35px;
+    width: 35px;
+    background-color: rgb(12, 219, 209);
+    border-radius: 50%;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4px;
+}
+.ind{
+    color: cyan;
+    border-radius: 15px;
+}
+.table-row{
+    background-color: black;    
+
+}
